@@ -1,0 +1,23 @@
+/* Profile.css */
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1.25em; 
+    width: 1800px;
+  }
+  
+  .my-p-text {
+    font-size: 1.5em; /* equivalent to 24px if 1em = 16px */
+    color: #333;
+  }
+  
