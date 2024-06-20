@@ -12,31 +12,37 @@ import Error from './Components/Error/Error'
 
 function App() {
   const socialNetworks = [
-    { name: 'Facebook', link: 'https://www.facebook.com/' }, // Use the imported facebook icon
-    { name: 'Instagram',  link: 'https://www.instagram.com/' }, // Use the imported instagram icon
+    { name: 'Facebook', link: 'https://www.facebook.com/' }, 
+    { name: 'Xtwitter', link: 'https://twitter.com/' },
+    { name: 'Instagram', link: 'https://www.instagram.com/' }, 
     { name: 'Linkedin',  link: 'https://www.linkedin.com/' },
-    { name: 'X-twitter', link: 'https://twitter.com/' },
-    // Add more social networks as needed
+
+    
   ];
   return (
     <div className='my-container'>
+
+
+     
       <Router>
       <Routes>
           <Route path='/gallery' element={<Gallery/>}/>
           <Route path='/profile/:user' element={<Profile/>}/>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/home' element={<Error/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/error' element={<Error/>}/>
        </Routes>
 
-          <nav>
-            <Link to="/gallery">Go to Gallery</Link> <br/>
-            <Link to="/error">Error</Link> <br/>
-            <Link to='profile'>Profile</Link> <br/>
-            <Link to="/home">Home</Link>  
+          <nav className='menu-items'>
+            <Link  className='menu-item' to="/gallery">Go to Gallery</Link> <br/>
+            <Link  className='menu-item' to="/error">Error</Link> <br/>
+            <Link  className='menu-item' to='/profile'>Profile</Link> <br/>
+            <Link  className='menu-item' to="/">Home</Link>  
          </nav> 
       </Router>
 
-      <Footer/>
+      <Footer socialNetworks={socialNetworks}/>
+      
     </div>
     
   )

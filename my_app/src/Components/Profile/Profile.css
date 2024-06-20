@@ -1,23 +1,24 @@
-/* Profile.css */
-body, html, #root {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-    box-sizing: border-box;
     padding: 1.25em; 
-    width: 1800px;
-  }
+}
   
-  .my-p-text {
-    font-size: 1.5em; /* equivalent to 24px if 1em = 16px */
+.profile-container .my-p-text {
+    font-size: 1.5em; 
     color: #333;
-  }
-  
+    border: 2px dotted green;
+    padding: 0.3em;
+}
+.profile-container .profile-general{
+  margin-top: 3em;
+  border: 2px dotted blue;
+}  

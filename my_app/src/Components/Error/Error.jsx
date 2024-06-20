@@ -1,10 +1,11 @@
 import React from 'react'
+import './Error.css'
 
 export default function Error() {
   return (
     <div>
       
-      <p>Error Page</p>
+      <p className='error-p'>Error Page</p>
     </div>
   )
 }

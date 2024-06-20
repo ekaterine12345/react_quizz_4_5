@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {useState, useEffect} from 'react'
-import './MyComponent.css'
+import './Gallery.css'
 
 const MyComponent = () => {
   const [data, setData] = useState([]);
@@ -20,19 +20,19 @@ const MyComponent = () => {
   }, [])
 
   return (
-    <div>
-    <div>
+    <>
+    <div className='gallery-container'>
       <h1>Data from Gallery</h1>
-      <ul>
+      <ul className='gallery-items'>
         {data.map((item) => (
           <li key={item.id}>
-            <img src={item.url} alt={item.title} />
+            <img  src={item.url} alt={item.title} />
             <p>{item.title}</p>
           </li>
         ))}
       </ul>
     </div>
-    </div>
+    </>
   )
 }
 export default MyComponent;

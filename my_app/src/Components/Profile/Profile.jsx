@@ -9,7 +9,7 @@ function Profile() {
     {user ? (
       <p className='my-p-text'>Made by {user}</p>
     ): (
-      <p className='my-p-text'>General Profile Page</p>
+      <p className='my-p-text profile-general'>General Profile Page</p>
     )}
   </div>
   )

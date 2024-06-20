@@ -1,31 +1,32 @@
-/* Home.css */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body, html, #root {
     height: 100%;
-    margin: 0;
-  }
-  
-  .home-container {
+    width: 100%;
+}
+.home-container {
+    margin-top: 5em;
     display: flex;
-    width: 1800px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
     padding: 1.25em; 
-    box-sizing: border-box;
-  }
+}
   
-  .home-image {
+.home-image {
     width: 100%;
     max-width: 37.5em; 
     height: auto;
     border-radius: 0.625em; 
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2); 
     margin-bottom: 1.25em; 
-  }
+}
   
-  .home-button {
+.home-button {
     background-color: #007bff;
     color: white;
     padding: 0.625em 1.25em; 
@@ -35,18 +36,18 @@ body, html, #root {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 1.25em; 
-  }
+}
   
-  .home-button:hover {
+.home-button:hover {
     background-color: #0056b3;
-  }
+}
   
-  .home-text {
+.home-text {
     font-size: 1.125em; 
     line-height: 1.6;
     max-width: 50em; 
     margin: 0 auto;
     text-align: justify;
     color: #333;
-  }
+}
   
